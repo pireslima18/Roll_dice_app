@@ -8,7 +8,12 @@ void main() {
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 217, 243, 251),
           title: Center(
-            child: Text("Roll Dice App")
+            child: Text(
+              "Roll Dice App",
+              style: TextStyle(
+                fontSize: 25,
+              ),
+            )
           ),
         ),
         body: Container(
@@ -24,7 +29,13 @@ void main() {
             )
           ),
           child: const Center(
-            child: Text("Hello Flutter"),
+            child: Text(
+              "Hello Flutter",
+              style: TextStyle(
+                height: 8,
+                fontSize: 28,
+              ),
+            ),
           ),
         ),
       ),
