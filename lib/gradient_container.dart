@@ -9,6 +9,9 @@ class GradientContainer extends StatelessWidget{
 
   List colors;
 
+  void onPressed() {
+  }
+
   @override
   Widget build(context) {
     return Container(
@@ -24,7 +27,30 @@ class GradientContainer extends StatelessWidget{
         )
       ),
       child: Center(
-        child: StyledText("Bem vindo ao app")
+        // child: StyledText("Bem vindo ao app")
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              'assets/images/dice-1.png',
+              height: 200,
+            ),
+            TextButton(
+              onPressed: onPressed,
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                textStyle: const TextStyle(
+                  fontSize: 30
+                ),
+                padding: const EdgeInsets.only(
+                  top: 20
+                )
+
+              ),
+              child: Text("Roll Dice")
+            )
+          ],
+        )
       ),
     );
   }
